@@ -1,2 +1,4 @@
+include ':javamodule'
+include ':kotlinLib'
 include ':app'
 rootProject.name = "kotlin_practice"
