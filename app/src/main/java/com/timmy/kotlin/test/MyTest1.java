@@ -1,4 +1,4 @@
-package com.timmy.kotlin;
+package com.timmy.kotlin.test;
 
 public class MyTest1 {
 
