@@ -5,7 +5,11 @@ import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.LifecycleObserver;
 import androidx.lifecycle.OnLifecycleEvent;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+
+import com.timmy.javamodule.viewmodel.ViewModelStuActivity;
 
 /**
  * JetPacket java语言实现
@@ -30,6 +34,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         TLog.d("onPause");
+    }
+
+    public void jump(View view) {
+        startActivity(new Intent(this, LiveDataStuActivity.class));
+    }
+
+    public void jumpMVVM(View view) {
+        startActivity(new Intent(this, ViewModelStuActivity.class));
     }
 
     private class MyObserver implements LifecycleObserver {
